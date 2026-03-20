@@ -1,0 +1,8 @@
+setuptools
+numpy
+pandas
+# pickle-mixin==1.0.2
+streamlit
+scikit-learn
+joblib
+xgboost
