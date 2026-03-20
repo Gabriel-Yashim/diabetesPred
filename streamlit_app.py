@@ -21,16 +21,18 @@ def preprocess_input(data):
 
 
 def main():
-    st.title("Diabetes Risk Predictor")
-    st.subheader("By SIMBIYAT OYIZA IBRAHIM")
-    st.markdown("Matric No: 22L1CS0398")
-    
-    st.markdown("""
-    ### Project Description
+    html_temp = """
+    <div>
+    <h1 style="color:#ff751f;text-align:center;">Diabetes Risk Prediction App</h1>
+    <h3 style="padding-bottom:0px;">By SIMBIYAT OYIZA IBRAHIM</h3>
+    <h5>Matric No: 22L1CS0498</h5>
+    </br>
+    <h3>Project Description</h3>
     This AI-powered tool analyzes clinical laboratory data to predict the likelihood of diabetes. 
-    The data was sourced from **Medical City Hospital** and **Al-Kindy Teaching Hospital** in Baghdad.
-    """)
-
+    </div>
+    """
+    
+    st.markdown(html_temp, unsafe_allow_html=True)
    
 
     with st.sidebar:
@@ -39,20 +41,20 @@ def main():
         st.write("**Key Features used:** HbA1c, BMI, Creatinine, and Lipid Profile.")
 
     if st.checkbox("Show Dataset Details"):
-        st.markdown("""# Diabetes Prediction Dataset
+        st.markdown("""## Diabetes Prediction Dataset
 
-**Description:**
+            **Description:**
 
-Welcome to the **Diabetes Prediction Dataset**, a valuable resource for researchers, data scientists, and medical professionals interested in the field of diabetes risk assessment and prediction. This dataset contains a diverse range of health-related attributes, meticulously collected to aid in the development of predictive models for identifying individuals at risk of diabetes. By sharing this dataset, we aim to foster collaboration and innovation within the data science community, leading to improved early diagnosis and personalized treatment strategies for diabetes. This dataset is a clinical collection of 1,000 patient records sourced from Medical City Hospital and Al-Kindy Teaching Hospital. It bridges demographic data with intensive metabolic markers.
+            Welcome to the **Diabetes Prediction Dataset**, a valuable resource for researchers, data scientists, and medical professionals interested in the field of diabetes risk assessment and prediction. This dataset contains a diverse range of health-related attributes, meticulously collected to aid in the development of predictive models for identifying individuals at risk of diabetes. By sharing this dataset, we aim to foster collaboration and innovation within the data science community, leading to improved early diagnosis and personalized treatment strategies for diabetes. This dataset is a clinical collection of 1,000 patient records sourced from Medical City Hospital and Al-Kindy Teaching Hospital. It bridges demographic data with intensive metabolic markers.
 
-**Column groups:**
+            **Column groups:**
 
-- **Demographic:** Age, Gender
-- **Renal Markers:** Creatinine ratio (Cr), Urea
-- **Lipid Profile:** Cholesterol (Chol), LDL, VLDL, Triglycerides (TG), HDL
-- **Glucose Control:** HBA1C
-- **Body Composition:** Body Mass Index (BMI)
-- **Target Class:** Diabetic (Y), Non-Diabetic (N), Pre-Diabetic (P))""")
+            - **Demographic:** Age, Gender
+            - **Renal Markers:** Creatinine ratio (Cr), Urea
+            - **Lipid Profile:** Cholesterol (Chol), LDL, VLDL, Triglycerides (TG), HDL
+            - **Glucose Control:** HBA1C
+            - **Body Composition:** Body Mass Index (BMI)
+            - **Target Class:** Diabetic (Y), Non-Diabetic (N), Pre-Diabetic (P))""")
 
 
     # Create form for user input
