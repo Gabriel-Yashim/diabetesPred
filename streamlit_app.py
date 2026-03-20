@@ -22,12 +22,16 @@ def preprocess_input(data):
 
 def main():
     st.title("Diabetes Risk Predictor")
+    st.subheader("By SIMBIYAT OYIZA IBRAHIM")
+    st.markdown("Matric No: 22L1CS0398")
     
     st.markdown("""
     ### Project Description
     This AI-powered tool analyzes clinical laboratory data to predict the likelihood of diabetes. 
     The data was sourced from **Medical City Hospital** and **Al-Kindy Teaching Hospital** in Baghdad.
     """)
+
+   
 
     with st.sidebar:
         st.header("Model Info")
@@ -50,19 +54,20 @@ Welcome to the **Diabetes Prediction Dataset**, a valuable resource for research
 - **Body Composition:** Body Mass Index (BMI)
 - **Target Class:** Diabetic (Y), Non-Diabetic (N), Pre-Diabetic (P))""")
 
+
     # Create form for user input
     with st.form(key='input_form'):
-        age = st.number_input("Age", min_value=0, value=0)
-        bmi = st.number_input("BMI", min_value=0.0, value=0.0)
-        urea = st.number_input("Urea", min_value=0.0, value=0.0)
-        Cr = st.number_input("Creatinine ratio", min_value=0, value=0)
-        tg = st.number_input("Triglycerides", min_value=0.0, value=0.0)
-        hba1c = st.number_input("HbA1c", min_value=0.0, value=0.0)
-        cholesterol = st.number_input("Cholesterol", min_value=0.0, value=0.0)
-        hdl = st.number_input("HDL", min_value=0.0, value=0.0)
-        ldl = st.number_input("LDL", min_value=0.0, value=0.0)
-        vldl = st.number_input("VLDL", min_value=0.0, value=0.0)
-        gender = st.selectbox("Gender", ['Male', 'Female'])
+        age = st.number_input("👤 Age", min_value=0, value=0)
+        bmi = st.number_input("⚖️ BMI", min_value=0.0, value=0.0)
+        urea = st.number_input("🧪 Urea", min_value=0.0, value=0.0)
+        Cr = st.number_input("🛡️ Creatinine ratio", min_value=0, value=0)
+        tg = st.number_input("🍔 Triglycerides", min_value=0.0, value=0.0)
+        hba1c = st.number_input("🩸 HbA1c", min_value=0.0, value=0.0)
+        cholesterol = st.number_input("📉 Total Cholesterol", min_value=0.0, value=0.0)
+        hdl = st.number_input("📊 HDL", min_value=0.0, value=0.0)
+        ldl = st.number_input("📉 LDL", min_value=0.0, value=0.0)
+        vldl = st.number_input("📊 VLDL", min_value=0.0, value=0.0)
+        gender = st.selectbox("🚻 Gender", ['Male', 'Female'])
 
         submit_button = st.form_submit_button(label='Predict')
         
