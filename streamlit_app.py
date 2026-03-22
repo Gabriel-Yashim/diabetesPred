@@ -25,7 +25,7 @@ def main():
     <div>
     <h1 style="color:#ff751f;text-align:center;">Diabetes Risk Prediction App</h1>
     <h3 style="padding-bottom:0px;">By SIMBIYAT OYIZA IBRAHIM</h3>
-    <h5>Matric No: 22L1CS0498</h5>
+    <h5>Matric No: 22L1CS0398</h5>
     </br>
     <h3>Project Description</h3>
     This AI-powered tool analyzes clinical laboratory data to predict the likelihood of diabetes. 
